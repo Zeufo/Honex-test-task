@@ -1,0 +1,21 @@
+[project]
+name = "honex"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "Zeufo", email = "p.yudin.work@gmail.com" }]
+requires-python = ">=3.14"
+dependencies = [
+    "bs4>=0.0.2",
+    "loguru>=0.7.3",
+    "requests>=2.34.2",
+    "tenacity>=9.1.4",
+]
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+extraPaths = ["src"]
+
+[tool.ruff]
+line-length = 100
