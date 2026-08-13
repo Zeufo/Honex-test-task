@@ -8,9 +8,10 @@
 ## Запуск
 
 ```bash
+python3 -m venv venv
+source venv/bin/activate.fish
 pip install -r requirements.txt
-cd src
-python3 main.py
+python src/main.py
 ```
 
 Результат появится в `result.csv` и `result.xlsx` в корне проекта (на уровень выше `src/`) - независимо от того, откуда именно запущен `main.py`, пути считаются от расположения `config.py`.
